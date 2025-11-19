@@ -1,6 +1,6 @@
 # Molecule dataset construction from PubChem
 
-This repo contains code to construct molecule dataset from PubChem data, which can be either downloaded from [FTP site](https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/) or using [PUG REST API](https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/[CID]/description/JSON).
+This repo contains code to construct molecule dataset from PubChem data, which can be either downloaded from [FTP site](https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/) or using [PUG REST API](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest#section=URL-based-API).
 
 The dataset consist of microscopic molecular properties such as complexity, a macroscopic description of the molecule. The microscopic molecular properties are parsed from the SDF data, whereas the macroscopic molecular description is retrieved via API.
 
