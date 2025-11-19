@@ -7,7 +7,7 @@ The dataset consist of microscopic molecular properties such as complexity, and 
 ## Usage
 First, the SDF data can be parsed by running `python extract_from_sdf.py`. This code parses `Compound_1_1000.sdf`, a subset of `Compound_000000001_000500000.sdf` downloaded from [https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/](https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/).
 
-The resulting csv file is generated in the output folder, and contains the following information:
+The resulting csv file is saved to `output/Compound_1_1000.csv`, and contains the following information:
 
 - PUBCHEM_COMPOUND_CID: PubChem Compound ID
 - PUBCHEM_CACTVS_COMPLEXITY: complexity of molecule
@@ -22,8 +22,6 @@ The resulting csv file is generated in the output folder, and contains the follo
 - PUBCHEM_CACTVS_TPSA: topological polar surface area
 - PUBCHEM_TOTAL_CHARGE: total charge
 - PUBCHEM_HEAVY_ATOM_COUNT: number of heavy atoms
-
-The resulting datafreme is saved to `output/Compound_1_1000.csv`.
 
 Next, use `fetch_description.py` to retrieve descritpion of molecules via PUG REST API: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/[CID]/description/JSON.
 
