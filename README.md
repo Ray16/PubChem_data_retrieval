@@ -23,6 +23,8 @@ The resulting csv file is generated in the output folder, and contains the follo
 - PUBCHEM_TOTAL_CHARGE: total charge
 - PUBCHEM_HEAVY_ATOM_COUNT: number of heavy atoms
 
-Next, use `fetch_descriptio.py` to retrieve descritpion of molecules via [PUG REST API](https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/[CID]/description/JSON).
+The resulting datafreme is saved to `output/Compound_1_1000.csv`.
+
+Next, use `fetch_description.py` to retrieve descritpion of molecules via PUG REST API: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/[CID]/description/JSON.
 
 The descriptions (when available) are appended to a new column named `description`, and the new file is saved to `output/Compound_1_1000_with_description.csv`.
