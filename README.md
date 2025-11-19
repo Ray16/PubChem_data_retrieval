@@ -2,7 +2,7 @@
 
 This repo contains code to construct molecule dataset from PubChem data, which can be either downloaded from [FTP site](https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/) or using [PUG REST API](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest#section=URL-based-API).
 
-The dataset consist of microscopic molecular properties such as complexity, and macroscopic descriptions of molecules. In the current implementation the former are parsed from the SDF data, whereas latter are retrieved via API.
+The dataset consist of microscopic molecular properties such as complexity, and macroscopic descriptions of molecules. In the current implementation, the microscopic molecular properties are parsed from the SDF data, whereas the macroscopic descriptions are retrieved via API.
 
 ## Usage
 First, the SDF data can be parsed by running `python extract_from_sdf.py`. This code parses `Compound_1_1000.sdf`, a subset of `Compound_000000001_000500000.sdf` downloaded from [https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/](https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/).
