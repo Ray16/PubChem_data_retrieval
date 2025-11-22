@@ -1,0 +1,2886 @@
+[
+  {
+    "question": "How many hydrogen bond donors does 3-acetyloxy-4-(trimethylazaniumyl)butanoate have?",
+    "answer": "0",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "4",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "203.24 g/mol",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "C9H17NO4",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "0.40",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 3-acetyloxy-4-(trimethylazaniumyl)butanoate have?",
+    "answer": "5",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "66.40",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 3-acetyloxy-4-(trimethylazaniumyl)butanoate contain?",
+    "answer": "14",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 3-acetyloxy-4-(trimethylazaniumyl)butanoate?",
+    "answer": "203.1158",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 3-acetyloxy-4-(trimethylazaniumyl)butanoate contain?",
+    "answer": "0",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 3-acetyloxy-4-(trimethylazaniumyl)butanoate have?",
+    "answer": "1",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 3-acetyloxy-4-(trimethylazaniumyl)butanoate have?",
+    "answer": "1",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "Does 3-acetyloxy-4-(trimethylazaniumyl)butanoate satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": false
+  },
+  {
+    "question": "Does 3-acetyloxy-4-(trimethylazaniumyl)butanoate have a role as human metabolite?",
+    "answer": "Yes",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-acetyloxy-4-(trimethylazaniumyl)butanoate functionally related to acetic acid?",
+    "answer": "Yes",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-acetyloxy-4-(trimethylazaniumyl)butanoate a conjugate base of an O-acetylcarnitinium?",
+    "answer": "Yes",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-acetyloxy-4-(trimethylazaniumyl)butanoate a conjugate base of O-acetylcarnitinium?",
+    "answer": "Yes",
+    "compound_cid": 1,
+    "compound_name": "3-acetyloxy-4-(trimethylazaniumyl)butanoate",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does (2-acetyloxy-3-carboxypropyl)-trimethylazanium have?",
+    "answer": "1",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "4",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "204.24 g/mol",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "C9H18NO4+",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "-0.30",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does (2-acetyloxy-3-carboxypropyl)-trimethylazanium have?",
+    "answer": "6",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "63.60",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does (2-acetyloxy-3-carboxypropyl)-trimethylazanium contain?",
+    "answer": "14",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of (2-acetyloxy-3-carboxypropyl)-trimethylazanium?",
+    "answer": "204.1236",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does (2-acetyloxy-3-carboxypropyl)-trimethylazanium contain?",
+    "answer": "0",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does (2-acetyloxy-3-carboxypropyl)-trimethylazanium have?",
+    "answer": "1",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does (2-acetyloxy-3-carboxypropyl)-trimethylazanium have?",
+    "answer": "1",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "Does (2-acetyloxy-3-carboxypropyl)-trimethylazanium satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 2,
+    "compound_name": "(2-acetyloxy-3-carboxypropyl)-trimethylazanium",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid have?",
+    "answer": "3",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "4",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "156.14 g/mol",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "C7H8O4",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "-0.30",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid have?",
+    "answer": "1",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "77.80",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid contain?",
+    "answer": "11",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid?",
+    "answer": "156.0423",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid contain?",
+    "answer": "0",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid have?",
+    "answer": "2",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid have?",
+    "answer": "1",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "Is 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid a cyclohexadienecarboxylic acid and an alpha,beta-unsaturated monocarboxylic acid?",
+    "answer": "Yes",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid a conjugate acid of a 2,3-dihydroxy-2,3-dihydrobenzoate?",
+    "answer": "Yes",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid a conjugate acid of 2?",
+    "answer": "Yes",
+    "compound_cid": 3,
+    "compound_name": "5,6-dihydroxycyclohexa-1,3-diene-1-carboxylic acid",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 1-aminopropan-2-ol have?",
+    "answer": "2",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1-aminopropan-2-ol?",
+    "answer": "2",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1-aminopropan-2-ol?",
+    "answer": "75.11 g/mol",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1-aminopropan-2-ol?",
+    "answer": "C3H9NO",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1-aminopropan-2-ol?",
+    "answer": "-1.00",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1-aminopropan-2-ol have?",
+    "answer": "1",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1-aminopropan-2-ol?",
+    "answer": "46.30",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1-aminopropan-2-ol contain?",
+    "answer": "5",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1-aminopropan-2-ol?",
+    "answer": "75.0684",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1-aminopropan-2-ol contain?",
+    "answer": "0",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1-aminopropan-2-ol have?",
+    "answer": "1",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1-aminopropan-2-ol have?",
+    "answer": "1",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "Does 1-aminopropan-2-ol satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": false
+  },
+  {
+    "question": "Does 1-aminopropan-2-ol have a role as Escherichia coli metabolite?",
+    "answer": "Yes",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": true
+  },
+  {
+    "question": "Is 1-aminopropan-2-ol a amino alcohol and a secondary alcohol?",
+    "answer": "Yes",
+    "compound_cid": 4,
+    "compound_name": "1-aminopropan-2-ol",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does (3-amino-2-oxopropyl) dihydrogen phosphate have?",
+    "answer": "3",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "6",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "169.07 g/mol",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "C3H8NO5P",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "-5.00",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does (3-amino-2-oxopropyl) dihydrogen phosphate have?",
+    "answer": "4",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "110.00",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does (3-amino-2-oxopropyl) dihydrogen phosphate contain?",
+    "answer": "10",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of (3-amino-2-oxopropyl) dihydrogen phosphate?",
+    "answer": "169.0140",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does (3-amino-2-oxopropyl) dihydrogen phosphate contain?",
+    "answer": "0",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does (3-amino-2-oxopropyl) dihydrogen phosphate have?",
+    "answer": "0",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does (3-amino-2-oxopropyl) dihydrogen phosphate have?",
+    "answer": "1",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "Does (3-amino-2-oxopropyl) dihydrogen phosphate satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "Is (3-amino-2-oxopropyl) dihydrogen phosphate a conjugate acid of a 3-ammonio-2-oxopropyl phosphate(1-)?",
+    "answer": "Yes",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": true
+  },
+  {
+    "question": "Is (3-amino-2-oxopropyl) dihydrogen phosphate a conjugate acid of 3-ammonio-2-oxopropyl phosphate(1-)?",
+    "answer": "Yes",
+    "compound_cid": 5,
+    "compound_name": "(3-amino-2-oxopropyl) dihydrogen phosphate",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 1-chloro-2,4-dinitrobenzene have?",
+    "answer": "0",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1-chloro-2,4-dinitrobenzene?",
+    "answer": "4",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1-chloro-2,4-dinitrobenzene?",
+    "answer": "202.55 g/mol",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1-chloro-2,4-dinitrobenzene?",
+    "answer": "C6H3ClN2O4",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1-chloro-2,4-dinitrobenzene?",
+    "answer": "2.30",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1-chloro-2,4-dinitrobenzene have?",
+    "answer": "0",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1-chloro-2,4-dinitrobenzene?",
+    "answer": "91.60",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1-chloro-2,4-dinitrobenzene contain?",
+    "answer": "13",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1-chloro-2,4-dinitrobenzene?",
+    "answer": "201.9781",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1-chloro-2,4-dinitrobenzene contain?",
+    "answer": "0",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1-chloro-2,4-dinitrobenzene have?",
+    "answer": "0",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1-chloro-2,4-dinitrobenzene have?",
+    "answer": "1",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "Does 1-chloro-2,4-dinitrobenzene satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": false
+  },
+  {
+    "question": "Is 1-chloro-2,4-dinitrobenzene a C-nitro compound?",
+    "answer": "Yes",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": true
+  },
+  {
+    "question": "Does 1-chloro-2,4-dinitrobenzene have a role as epitope?",
+    "answer": "Yes",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": true
+  },
+  {
+    "question": "Is 1-chloro-2,4-dinitrobenzene a C-nitro compound and a member of monochlorobenzenes?",
+    "answer": "Yes",
+    "compound_cid": 6,
+    "compound_name": "1-chloro-2,4-dinitrobenzene",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 9-ethylpurin-6-amine have?",
+    "answer": "1",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 9-ethylpurin-6-amine?",
+    "answer": "4",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 9-ethylpurin-6-amine?",
+    "answer": "163.18 g/mol",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 9-ethylpurin-6-amine?",
+    "answer": "C7H9N5",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 9-ethylpurin-6-amine?",
+    "answer": "0.20",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 9-ethylpurin-6-amine have?",
+    "answer": "1",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 9-ethylpurin-6-amine?",
+    "answer": "69.60",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 9-ethylpurin-6-amine contain?",
+    "answer": "12",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 9-ethylpurin-6-amine?",
+    "answer": "163.0858",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 9-ethylpurin-6-amine contain?",
+    "answer": "0",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 9-ethylpurin-6-amine have?",
+    "answer": "0",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 9-ethylpurin-6-amine have?",
+    "answer": "1",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "Does 9-ethylpurin-6-amine satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 7,
+    "compound_name": "9-ethylpurin-6-amine",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2,3-dihydroxy-3-methylpentanoic acid have?",
+    "answer": "3",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "4",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "148.16 g/mol",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "C6H12O4",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "-0.40",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2,3-dihydroxy-3-methylpentanoic acid have?",
+    "answer": "3",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "77.80",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2,3-dihydroxy-3-methylpentanoic acid contain?",
+    "answer": "10",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2,3-dihydroxy-3-methylpentanoic acid?",
+    "answer": "148.0736",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2,3-dihydroxy-3-methylpentanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2,3-dihydroxy-3-methylpentanoic acid have?",
+    "answer": "2",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2,3-dihydroxy-3-methylpentanoic acid have?",
+    "answer": "1",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2,3-dihydroxy-3-methylpentanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 8,
+    "compound_name": "2,3-dihydroxy-3-methylpentanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate have?",
+    "answer": "7",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "9",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "260.14 g/mol",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "C6H13O9P",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "-4.80",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate have?",
+    "answer": "2",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "168.00",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate contain?",
+    "answer": "16",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate?",
+    "answer": "260.0297",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate contain?",
+    "answer": "0",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate have?",
+    "answer": "4",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate have?",
+    "answer": "1",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "Does (2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate satisfy Lipinski's rule of five?",
+    "answer": "No",
+    "compound_cid": 9,
+    "compound_name": "(2,3,4,5,6-pentahydroxycyclohexyl) dihydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid have?",
+    "answer": "7",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "9",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "473.40 g/mol",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "C20H23N7O7",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "-1.20",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid have?",
+    "answer": "9",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "216.00",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid contain?",
+    "answer": "34",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid?",
+    "answer": "473.1659",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid contain?",
+    "answer": "0",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid have?",
+    "answer": "2",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid have?",
+    "answer": "1",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid satisfy Lipinski's rule of five?",
+    "answer": "No",
+    "compound_cid": 10,
+    "compound_name": "2-[[4-[(2-amino-4-oxo-5,6,7,8-tetrahydro-1H-pteridin-6-yl)methyl-formylamino]benzoyl]amino]pentanedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 1,2-dichloroethane have?",
+    "answer": "0",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1,2-dichloroethane?",
+    "answer": "0",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1,2-dichloroethane?",
+    "answer": "98.96 g/mol",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1,2-dichloroethane?",
+    "answer": "C2H4Cl2",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1,2-dichloroethane?",
+    "answer": "1.50",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1,2-dichloroethane have?",
+    "answer": "1",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1,2-dichloroethane?",
+    "answer": "0.00",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1,2-dichloroethane contain?",
+    "answer": "4",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1,2-dichloroethane?",
+    "answer": "97.9690",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1,2-dichloroethane contain?",
+    "answer": "0",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1,2-dichloroethane have?",
+    "answer": "0",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1,2-dichloroethane have?",
+    "answer": "1",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "Does 1,2-dichloroethane satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 11,
+    "compound_name": "1,2-dichloroethane",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does benzene-1,2,3,5-tetrol have?",
+    "answer": "4",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in benzene-1,2,3,5-tetrol?",
+    "answer": "4",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of benzene-1,2,3,5-tetrol?",
+    "answer": "142.11 g/mol",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of benzene-1,2,3,5-tetrol?",
+    "answer": "C6H6O4",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of benzene-1,2,3,5-tetrol?",
+    "answer": "0.80",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does benzene-1,2,3,5-tetrol have?",
+    "answer": "0",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of benzene-1,2,3,5-tetrol?",
+    "answer": "80.90",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does benzene-1,2,3,5-tetrol contain?",
+    "answer": "10",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of benzene-1,2,3,5-tetrol?",
+    "answer": "142.0266",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does benzene-1,2,3,5-tetrol contain?",
+    "answer": "0",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does benzene-1,2,3,5-tetrol have?",
+    "answer": "0",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does benzene-1,2,3,5-tetrol have?",
+    "answer": "1",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "Does benzene-1,2,3,5-tetrol satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 12,
+    "compound_name": "benzene-1,2,3,5-tetrol",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 1,2,4-trichlorobenzene have?",
+    "answer": "0",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1,2,4-trichlorobenzene?",
+    "answer": "0",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1,2,4-trichlorobenzene?",
+    "answer": "181.40 g/mol",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1,2,4-trichlorobenzene?",
+    "answer": "C6H3Cl3",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1,2,4-trichlorobenzene?",
+    "answer": "4.00",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1,2,4-trichlorobenzene have?",
+    "answer": "0",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1,2,4-trichlorobenzene?",
+    "answer": "0.00",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1,2,4-trichlorobenzene contain?",
+    "answer": "9",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1,2,4-trichlorobenzene?",
+    "answer": "179.9300",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1,2,4-trichlorobenzene contain?",
+    "answer": "0",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1,2,4-trichlorobenzene have?",
+    "answer": "0",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1,2,4-trichlorobenzene have?",
+    "answer": "1",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "Does 1,2,4-trichlorobenzene satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": false
+  },
+  {
+    "question": "Is 1,2,4-trichlorobenzene a trichlorobenzene with chloro substituents at positions 1, 2 and 4?",
+    "answer": "Yes",
+    "compound_cid": 13,
+    "compound_name": "1,2,4-trichlorobenzene",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid have?",
+    "answer": "2",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "5",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "352.50 g/mol",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "C20H32O5",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "3.10",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid have?",
+    "answer": "13",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "91.70",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid contain?",
+    "answer": "25",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid?",
+    "answer": "352.2250",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid have?",
+    "answer": "3",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid have?",
+    "answer": "1",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 14,
+    "compound_name": "7-[3-hydroxy-5-oxo-2-(3-oxooct-1-enyl)cyclopentyl]heptanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one have?",
+    "answer": "1",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "2",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "290.40 g/mol",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "C19H30O2",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "3.70",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one have?",
+    "answer": "0",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "37.30",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one contain?",
+    "answer": "21",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one?",
+    "answer": "290.2246",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one contain?",
+    "answer": "0",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one have?",
+    "answer": "7",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one have?",
+    "answer": "1",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "Does 17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 15,
+    "compound_name": "17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 1,8-diazacyclotetradecane-2,9-dione have?",
+    "answer": "2",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "2",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "226.32 g/mol",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "C12H22N2O2",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "0.60",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1,8-diazacyclotetradecane-2,9-dione have?",
+    "answer": "0",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "58.20",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1,8-diazacyclotetradecane-2,9-dione contain?",
+    "answer": "16",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1,8-diazacyclotetradecane-2,9-dione?",
+    "answer": "226.1681",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1,8-diazacyclotetradecane-2,9-dione contain?",
+    "answer": "0",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1,8-diazacyclotetradecane-2,9-dione have?",
+    "answer": "0",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1,8-diazacyclotetradecane-2,9-dione have?",
+    "answer": "1",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "Does 1,8-diazacyclotetradecane-2,9-dione satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 16,
+    "compound_name": "1,8-diazacyclotetradecane-2,9-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2,3-dihydropyridine-2,6-dicarboxylic acid have?",
+    "answer": "2",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "5",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "169.13 g/mol",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "C7H7NO4",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "-0.10",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2,3-dihydropyridine-2,6-dicarboxylic acid have?",
+    "answer": "2",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "87.00",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2,3-dihydropyridine-2,6-dicarboxylic acid contain?",
+    "answer": "12",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2,3-dihydropyridine-2,6-dicarboxylic acid?",
+    "answer": "169.0375",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2,3-dihydropyridine-2,6-dicarboxylic acid contain?",
+    "answer": "0",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2,3-dihydropyridine-2,6-dicarboxylic acid have?",
+    "answer": "1",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2,3-dihydropyridine-2,6-dicarboxylic acid have?",
+    "answer": "1",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2,3-dihydropyridine-2,6-dicarboxylic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": false
+  },
+  {
+    "question": "Is 2,3-dihydropyridine-2,6-dicarboxylic acid a conjugate acid of a 2,3-dihydrodipicolinate(2-)?",
+    "answer": "Yes",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2,3-dihydropyridine-2,6-dicarboxylic acid a conjugate acid of 2?",
+    "answer": "Yes",
+    "compound_cid": 17,
+    "compound_name": "2,3-dihydropyridine-2,6-dicarboxylic acid",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 4,5,6-trihydroxy-2,3-dioxohexanoic acid have?",
+    "answer": "4",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "7",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "192.12 g/mol",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "C6H8O7",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "-1.80",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 4,5,6-trihydroxy-2,3-dioxohexanoic acid have?",
+    "answer": "5",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "132.00",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 4,5,6-trihydroxy-2,3-dioxohexanoic acid contain?",
+    "answer": "13",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 4,5,6-trihydroxy-2,3-dioxohexanoic acid?",
+    "answer": "192.0270",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 4,5,6-trihydroxy-2,3-dioxohexanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 4,5,6-trihydroxy-2,3-dioxohexanoic acid have?",
+    "answer": "2",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 4,5,6-trihydroxy-2,3-dioxohexanoic acid have?",
+    "answer": "1",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 4,5,6-trihydroxy-2,3-dioxohexanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 18,
+    "compound_name": "4,5,6-trihydroxy-2,3-dioxohexanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2,3-dihydroxybenzoic acid have?",
+    "answer": "3",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2,3-dihydroxybenzoic acid?",
+    "answer": "4",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2,3-dihydroxybenzoic acid?",
+    "answer": "154.12 g/mol",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2,3-dihydroxybenzoic acid?",
+    "answer": "C7H6O4",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2,3-dihydroxybenzoic acid?",
+    "answer": "1.20",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2,3-dihydroxybenzoic acid have?",
+    "answer": "1",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2,3-dihydroxybenzoic acid?",
+    "answer": "77.80",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2,3-dihydroxybenzoic acid contain?",
+    "answer": "11",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2,3-dihydroxybenzoic acid?",
+    "answer": "154.0266",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2,3-dihydroxybenzoic acid contain?",
+    "answer": "0",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2,3-dihydroxybenzoic acid have?",
+    "answer": "0",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2,3-dihydroxybenzoic acid have?",
+    "answer": "1",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2,3-dihydroxybenzoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Is 2,3-dihydroxybenzoic acid a dihydroxybenzoic acid?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Does 2,3-dihydroxybenzoic acid occur naturally in Phyllanthus acidus?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Does 2,3-dihydroxybenzoic acid have a role as human xenobiotic metabolite?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2,3-dihydroxybenzoic acid functionally related to benzoic acid?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2,3-dihydroxybenzoic acid a conjugate acid of a 2,3-dihydroxybenzoate?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2,3-dihydroxybenzoic acid a conjugate acid of 2?",
+    "answer": "Yes",
+    "compound_cid": 19,
+    "compound_name": "2,3-dihydroxybenzoic acid",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 3-(2,3-dihydroxyphenyl)propanoic acid have?",
+    "answer": "3",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "4",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "182.17 g/mol",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "C9H10O4",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "1.00",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 3-(2,3-dihydroxyphenyl)propanoic acid have?",
+    "answer": "3",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "77.80",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 3-(2,3-dihydroxyphenyl)propanoic acid contain?",
+    "answer": "13",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 3-(2,3-dihydroxyphenyl)propanoic acid?",
+    "answer": "182.0579",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 3-(2,3-dihydroxyphenyl)propanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 3-(2,3-dihydroxyphenyl)propanoic acid have?",
+    "answer": "0",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 3-(2,3-dihydroxyphenyl)propanoic acid have?",
+    "answer": "1",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 3-(2,3-dihydroxyphenyl)propanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Is 3-(2,3-dihydroxyphenyl)propanoic acid a monocarboxylic acid?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-(2,3-dihydroxyphenyl)propanoic acid a metabolite in quinoline?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Does 3-(2,3-dihydroxyphenyl)propanoic acid have a role as metabolite?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-(2,3-dihydroxyphenyl)propanoic acid functionally related to propionic acid?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-(2,3-dihydroxyphenyl)propanoic acid a conjugate acid of a 3-(2,3-dihydroxyphenyl)propanoate?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 3-(2,3-dihydroxyphenyl)propanoic acid a conjugate acid of 3-(2?",
+    "answer": "Yes",
+    "compound_cid": 20,
+    "compound_name": "3-(2,3-dihydroxyphenyl)propanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-ethyl-2-hydroxy-3-oxobutanoic acid have?",
+    "answer": "2",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "4",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "146.14 g/mol",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "C6H10O4",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "-0.20",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-ethyl-2-hydroxy-3-oxobutanoic acid have?",
+    "answer": "3",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "74.60",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-ethyl-2-hydroxy-3-oxobutanoic acid contain?",
+    "answer": "10",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-ethyl-2-hydroxy-3-oxobutanoic acid?",
+    "answer": "146.0579",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-ethyl-2-hydroxy-3-oxobutanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-ethyl-2-hydroxy-3-oxobutanoic acid have?",
+    "answer": "1",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-ethyl-2-hydroxy-3-oxobutanoic acid have?",
+    "answer": "1",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-ethyl-2-hydroxy-3-oxobutanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 21,
+    "compound_name": "2-ethyl-2-hydroxy-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-hydroxy-2-methyl-3-oxobutanoic acid have?",
+    "answer": "2",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "4",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "132.11 g/mol",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "C5H8O4",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "-0.70",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-hydroxy-2-methyl-3-oxobutanoic acid have?",
+    "answer": "2",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "74.60",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-hydroxy-2-methyl-3-oxobutanoic acid contain?",
+    "answer": "9",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-hydroxy-2-methyl-3-oxobutanoic acid?",
+    "answer": "132.0423",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-hydroxy-2-methyl-3-oxobutanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-hydroxy-2-methyl-3-oxobutanoic acid have?",
+    "answer": "1",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-hydroxy-2-methyl-3-oxobutanoic acid have?",
+    "answer": "1",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-hydroxy-2-methyl-3-oxobutanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-hydroxy-2-methyl-3-oxobutanoic acid have a role as mouse metabolite?",
+    "answer": "Yes",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2-hydroxy-2-methyl-3-oxobutanoic acid functionally related to butyric acid?",
+    "answer": "Yes",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2-hydroxy-2-methyl-3-oxobutanoic acid a conjugate acid of a 2-acetyllactate?",
+    "answer": "Yes",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2-hydroxy-2-methyl-3-oxobutanoic acid a conjugate acid of 2-acetyllactate?",
+    "answer": "Yes",
+    "compound_cid": 22,
+    "compound_name": "2-hydroxy-2-methyl-3-oxobutanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid have?",
+    "answer": "3",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "6",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "185.13 g/mol",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "C7H7NO5",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "-0.50",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid have?",
+    "answer": "4",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "118.00",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid contain?",
+    "answer": "13",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid?",
+    "answer": "185.0324",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid contain?",
+    "answer": "0",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid have?",
+    "answer": "0",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid have?",
+    "answer": "1",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 23,
+    "compound_name": "2-amino-3-(3-oxoprop-1-enyl)but-2-enedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one have?",
+    "answer": "9",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "11",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "323.26 g/mol",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "C9H17N5O8",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "-4.50",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one have?",
+    "answer": "3",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "216.00",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one contain?",
+    "answer": "22",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one?",
+    "answer": "323.1077",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one contain?",
+    "answer": "0",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one have?",
+    "answer": "6",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one have?",
+    "answer": "1",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one satisfy Lipinski's rule of five?",
+    "answer": "No",
+    "compound_cid": 24,
+    "compound_name": "2-amino-5,6,7,8-tetrahydroxy-6-(1,2,3-trihydroxypropyl)-3,4a,7,8a-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one have?",
+    "answer": "8",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "8",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "289.25 g/mol",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "C9H15N5O6",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "-3.30",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one have?",
+    "answer": "3",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "184.00",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one contain?",
+    "answer": "20",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one?",
+    "answer": "289.1022",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one contain?",
+    "answer": "0",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one have?",
+    "answer": "4",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one have?",
+    "answer": "1",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one satisfy Lipinski's rule of five?",
+    "answer": "No",
+    "compound_cid": 25,
+    "compound_name": "2-amino-7,8-dihydroxy-6-(1,2,3-trihydroxypropyl)-1,5,6,7-tetrahydropteridin-4-one",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione have?",
+    "answer": "4",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "8",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "269.21 g/mol",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "C9H11N5O5",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "-2.70",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione have?",
+    "answer": "2",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "158.00",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione contain?",
+    "answer": "19",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione?",
+    "answer": "269.0760",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione contain?",
+    "answer": "0",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione have?",
+    "answer": "3",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione have?",
+    "answer": "1",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "Does 1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 26,
+    "compound_name": "1-(2-amino-7,8-dihydroxy-4-oxo-3,4a,7,8a-tetrahydropteridin-6-yl)propane-1,2-dione",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate have?",
+    "answer": "10",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "17",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "527.17 g/mol",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "C9H16N5O15P3",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "-6.90",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate have?",
+    "answer": "9",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "324.00",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate contain?",
+    "answer": "32",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate?",
+    "answer": "526.9856",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate contain?",
+    "answer": "0",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate have?",
+    "answer": "3",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate have?",
+    "answer": "1",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "Does [[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate satisfy Lipinski's rule of five?",
+    "answer": "No",
+    "compound_cid": 27,
+    "compound_name": "[[3-(2-amino-7,8-dihydroxy-4-oxo-1,7-dihydropteridin-6-yl)-2,3-dihydroxypropoxy]-hydroxyphosphoryl] phosphono hydrogen phosphate",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-aminohexa-2,4-dienedioic acid have?",
+    "answer": "3",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "5",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "157.12 g/mol",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "C6H7NO4",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "-0.30",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-aminohexa-2,4-dienedioic acid have?",
+    "answer": "3",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "101.00",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-aminohexa-2,4-dienedioic acid contain?",
+    "answer": "11",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-aminohexa-2,4-dienedioic acid?",
+    "answer": "157.0375",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-aminohexa-2,4-dienedioic acid contain?",
+    "answer": "0",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-aminohexa-2,4-dienedioic acid have?",
+    "answer": "0",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-aminohexa-2,4-dienedioic acid have?",
+    "answer": "1",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-aminohexa-2,4-dienedioic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 28,
+    "compound_name": "2-aminohexa-2,4-dienedioic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many hydrogen bond donors does 2-amino-3-oxopropanoic acid have?",
+    "answer": "2",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the number of hydrogen bond acceptors in 2-amino-3-oxopropanoic acid?",
+    "answer": "4",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular weight of 2-amino-3-oxopropanoic acid?",
+    "answer": "103.08 g/mol",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the molecular formula of 2-amino-3-oxopropanoic acid?",
+    "answer": "C3H5NO3",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the logP (lipophilicity) of 2-amino-3-oxopropanoic acid?",
+    "answer": "-3.70",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many rotatable bonds does 2-amino-3-oxopropanoic acid have?",
+    "answer": "2",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the topological polar surface area (TPSA) of 2-amino-3-oxopropanoic acid?",
+    "answer": "80.40",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many heavy atoms does 2-amino-3-oxopropanoic acid contain?",
+    "answer": "7",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "What is the exact mass of 2-amino-3-oxopropanoic acid?",
+    "answer": "103.0269",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many isotope atoms does 2-amino-3-oxopropanoic acid contain?",
+    "answer": "0",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many stereogenic centers does 2-amino-3-oxopropanoic acid have?",
+    "answer": "1",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "How many covalent units does 2-amino-3-oxopropanoic acid have?",
+    "answer": "1",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Does 2-amino-3-oxopropanoic acid satisfy Lipinski's rule of five?",
+    "answer": "Yes",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": false
+  },
+  {
+    "question": "Is 2-amino-3-oxopropanoic acid a non-proteinogenic alpha-amino acid and an alanine derivative?",
+    "answer": "Yes",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": true
+  },
+  {
+    "question": "Is 2-amino-3-oxopropanoic acid functionally related to serine?",
+    "answer": "Yes",
+    "compound_cid": 29,
+    "compound_name": "2-amino-3-oxopropanoic acid",
+    "description_question": true
+  }
+]
