@@ -25,7 +25,8 @@ FUNCTIONAL_GROUP_HIERARCHY = {
     'carboxylate': ['ketone'], 'primary_amide': ['ketone'], 'secondary_amide': ['ketone'],
     'tertiary_amide': ['ketone'], 'acyl_chloride': ['ketone'], 'anhydride': ['ketone', 'ester'],
     'aldehyde': ['ketone'], 'thioester': ['thioketone'], 'carbamate': ['ester', 'ether'],
-    'carbonate': ['ester', 'ether'], 'urea': ['primary_amide', 'secondary_amide'],
+    'carbonate': ['ester', 'ether'], 
+    'urea': ['primary_amide', 'secondary_amide', 'tertiary_amide'], # Added tertiary_amide here
     'sulfonamide': ['sulfone'], 'sulfonic_acid': ['sulfone'], 'hemiacetal': ['ether', 'secondary_alcohol'],
     'acetal': ['ether'], 'phosphate': ['ester', 'ether'], 'phosphonate': ['ester', 'ether'],
 }
@@ -94,31 +95,46 @@ def compute_rdkit_features(smiles: str) -> Dict[str, Any]:
 
         # Functional groups - comprehensive detection
         fg_smarts = {
-            'primary_amine': '[NX3;H2;!$(NC=O);!$(NS=O)]', 'secondary_amine': '[NX3;H1;!$(NC=O);!$(NS=O)]([#6])[#6]',
-            'tertiary_amine': '[NX3;H0;!$(NC=O);!$(NS=O)]([#6])([#6])[#6]', 'quaternary_ammonium': '[N+;H0]([#6])([#6])([#6])[#6]',
-            'primary_amide': '[NX3;H2][CX3](=O)[#6]', 'secondary_amide': '[NX3;H1]([#6])[CX3](=O)[#6]',
-            'tertiary_amide': '[NX3;H0]([#6])([#6])[CX3](=O)[#6]', 'imine': '[NX2]=[CX3]', 'nitrile': '[NX1]#[CX2]',
-            'nitro': '[$([NX3](=O)=O),$([NX3+](=O)[O-])][!#8]', 'nitroso': '[NX2](=O)[#6]', 'azide': '[NX2]=[NX2+]=[NX1-]',
-            'hydrazine': '[NX3][NX3]', 'isocyanate': '[NX2]=[CX2]=[OX1]', 'isothiocyanate': '[NX2]=[CX2]=[SX1]',
-            'primary_alcohol': '[CX4][OX2H]', 'secondary_alcohol': '[CX4H]([#6])[OX2H]',
-            'tertiary_alcohol': '[CX4]([#6])([#6])([#6])[OX2H]', 'phenol': 'c[OX2H]',
-            'carboxylic_acid': '[CX3](=O)[OX2H1]', 'carboxylate': '[CX3](=O)[OX1-,OX2-]',
-            'ester': '[CX3](=O)[OX2][#6;!$(C=O)]', 'lactone': '[#6]~1~[#6]~[#6](=O)[OX2]~[#6]~[#6]~1',
-            'ketone': '[#6][CX3](=O)[#6]', 'aldehyde': '[CX3H1](=O)[#6]', 'acyl_chloride': '[CX3](=O)[Cl]',
-            'anhydride': '[CX3](=O)[OX2][CX3](=O)', 'ether': '[OD2]([#6])[#6]', 'epoxide': 'C1OC1',
-            'peroxide': '[OX2][OX2]', 'hemiacetal': '[CX4]([OX2H])([OX2])[#6]', 'acetal': '[CX4]([OX2][#6])([OX2][#6])[#6]',
+            'primary_amine': '[#7X3;H2;!$(NC=O);!$(NS=O)]', 
+            'secondary_amine': '[#7X3;H1;!$(NC=O);!$(NS=O)]([#6])[#6]',
+            'tertiary_amine': '[#7X3;H0;!$(NC=O);!$(NS=O)]([#6])([#6])[#6]', 
+            'quaternary_ammonium': '[#7+;H0]([#6])([#6])([#6])[#6]',
+            
+            # Amides & Ureas (Using generic atom tags to catch cyclic/aromatic variants)
+            'primary_amide': '[#7X3;H2][#6X3](=O)[#6]', 
+            'secondary_amide': '[#7X3;H1]([#6])[#6X3](=O)[#6]',
+            'tertiary_amide': '[#7X3;H0]([#6])([#6])[#6X3](=O)[#6]', 
+            'urea': '[#7X3;!@R][#6X3](=O)[#7X3;!@R]',
+            'carbamate': '[#7X3][#6X3](=O)[OX2]', 
+            
+            'imine': '[#7X2]=[#6X3]', 'nitrile': '[#7X1]#[#6X2]',
+            'nitro': '[$([#7X3](=O)=O),$([#7X3+](=O)[O-])][!#8]', 
+            'nitroso': '[#7X2](=O)[#6]', 'azide': '[#7X2]=[#7X2+]=[#7X1-]',
+            
+            # Oxygen groups
+            'primary_alcohol': '[#6X4][OX2H]', 'secondary_alcohol': '[#6X4H]([#6])[OX2H]',
+            'tertiary_alcohol': '[#6X4]([#6])([#6])([#6])[OX2H]', 'phenol': 'c[OX2H]',
+            'carboxylic_acid': '[#6X3](=O)[OX2H1]', 'carboxylate': '[#6X3](=O)[OX1-,OX2-]',
+            'ester': '[#6X3](=O)[OX2][#6;!$(C=O)]', 'lactone': '[#6]~1~[#6]~[#6](=O)[OX2]~[#6]~[#6]~1',
+            'ketone': '[#6][#6X3](=O)[#6]', 'aldehyde': '[#6X3H1](=O)[#6]', 
+            'acyl_chloride': '[#6X3](=O)[Cl]',
+            'anhydride': '[#6X3](=O)[OX2][#6X3](=O)', 'ether': '[OD2]([#6])[#6]', 
+            
+            # Sulfur/Phosphorus
             'thiol': '[SX2H]', 'sulfide': '[SX2]([#6])[#6]', 'disulfide': '[SX2][SX2]',
-            'sulfoxide': '[SX3](=O)([#6])[#6]', 'sulfone': '[SX4](=O)(=O)([#6])[#6]', 'sulfonic_acid': '[SX4](=O)(=O)[OX2H]',
-            'sulfonamide': '[SX4](=O)(=O)[NX3]', 'thioester': '[CX3](=O)[SX2][#6]', 'thioketone': '[CX3](=S)[#6]',
-            'phosphate': '[PX4](=O)([OX2])([OX2])[OX2]', 'phosphonate': '[PX4](=O)([#6])([OX2])[OX2]',
-            'phosphine': '[PX3]([#6])([#6])[#6]', 'phosphine_oxide': '[PX4](=O)([#6])([#6])[#6]',
+            'sulfoxide': '[SX3](=O)([#6])[#6]', 'sulfone': '[SX4](=O)(=O)([#6])[#6]',
+            'sulfonamide': '[SX4](=O)(=O)[#7X3]', 
+            'phosphate': '[PX4](=O)([OX2])([OX2])[OX2]', 
+            
+            # Halogens & Aromatics
             'fluoride': '[FX1]', 'chloride': '[ClX1]', 'bromide': '[BrX1]', 'iodide': '[IX1]',
-            'gem_dihalide': '[CX4]([F,Cl,Br,I])([F,Cl,Br,I])', 'benzene': 'c1ccccc1', 'pyridine': 'n1ccccc1',
-            'pyrrole': '[nH]1cccc1', 'furan': 'o1cccc1', 'thiophene': 's1cccc1', 'imidazole': 'c1[nH]cnc1',
-            'alkene': '[CX3]=[CX3]', 'alkyne': '[CX2]#[CX2]', 'allene': '[CX3]=[CX2]=[CX3]',
-            'carbonate': '[OX2][CX3](=O)[OX2]', 'carbamate': '[NX3][CX3](=O)[OX2]', 'urea': '[NX3][CX3](=O)[NX3]',
-            'guanidine': '[NX3][CX3](=[NX2])[NX3]', 'hydroxylamine': '[NX3][OX2H]', 'hydrazone': '[NX2]=[CX3][#6]',
-            'oxime': '[CX3]=[NX2][OX2H]', 'enol': '[OX2H][CX3]=[CX3]', 'enamine': '[NX3][CX3]=[CX3]',
+            'benzene': 'c1ccccc1', 'pyridine': 'n1ccccc1',
+            'pyrrole': '[nH]1cccc1', 'furan': 'o1cccc1', 'thiophene': 's1cccc1', 
+            
+            # FIX: Imidazole now matches c1ncn1 (generic) or substituted N
+            'imidazole': 'c1nc[n,nH,nX3]c1', 
+            
+            'alkene': '[CX3]=[CX3]', 'alkyne': '[CX2]#[CX2]',
         }
         
         matched = []
