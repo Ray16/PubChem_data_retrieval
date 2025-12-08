@@ -8,13 +8,10 @@ Install Dependencies:
 
 ```
 pip install pubchempy pandas
-```
-
-# Optional but highly recommended for full features:
 conda install -c conda-forge rdkit
 ```
 
-Modify `cid_list`, then do
+Run the script
 ```
 python chem_qa_gen.py
 ```
