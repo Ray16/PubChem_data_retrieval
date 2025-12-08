@@ -1,0 +1,101 @@
+question,answer_source,correct_answer,LLM_answer_1,LLM_answer_2,LLM_answer_3,LLM_answer_4,LLM_answer_5
+How many N atoms does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one have?,molecular_formula (parsed),4,4,4,4,4,4
+How many C atoms does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one have?,molecular_formula (parsed),17,20,20,20,20,20
+Does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one contain a carboxylic acid group?,functional_groups (carboxylic_acid boolean),No,No,No,No,No,No
+Does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one contain a secondary amine group?,functional_groups (secondary_amine boolean),No,Yes,Yes,Yes,Yes,Yes
+Does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one contain a urea group?,functional_groups (urea boolean),No,No,No,No,No,No
+"Based on common functional groups, which is the most basic group in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?",acid_base_hierarchy_base,tertiary amine,amine,amine,amine,amine,amine
+How many nitrogen atoms are in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,molecular_formula (parsed),4,4,4,4,4,4
+What is the carbon to hydrogen ratio in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,molecular_formula (parsed),17:26,0.5,0.5,0.5,0.5,0.5
+What is the degree of unsaturation of 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,molecular_formula (calculated),7,8,8,8,8,8
+Which set does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one deviate from more: Lipinski or Veber?,multi_rule_comparison,Neither,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski
+What is the length of the canonical SMILES for 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,iupac_to_smiles_length,49,72,77,77,72,77
+What is the most abundant functional group in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,most_abundant_functional_group_with_ties,tertiary amine,sulfonyl,sulfonyl,sulfonyl,sulfonyl,sulfonyl
+Is the most abundant functional group in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one polar or nonpolar?,functional_group_polarity,polar,polar,polar,polar,polar,polar
+Does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one contain a hydrolyzable functional group?,hydrolyzable_functional_groups,Yes,Yes,Yes,Yes,Yes,Yes
+Does 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one contain both an aldehyde and a ketone group?,aldehyde_ketone_exclusivity,No,No,No,No,No,No
+Which carbonyl functional group is present in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,carbonyl_type_presence,lactone and carbamate,ketone,Ketone,ketone,Ketone,Ketone
+How many distinct functional group types are present in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one?,functional_group_diversity,5,ketone and ether and sulfonamide and imidazole,ketone and ether and sulfonyl and imidazole,ketone and ether and sulfonamide,ketone and ether and sulfonamide,ketone and ether and sulfonyl and imidazole
+"Which functional group is more numerous in 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one, alcohol or amine?",alcohol_vs_amine_count,amine,amine,amine,amine,amine,amine
+Is 3-[1-(1-methylimidazol-4-yl)sulfonylpiperidin-4-yl]-1-oxa-3-azaspiro[4.5]decan-2-one primarily a nitrogen-containing or oxygen-containing compound?,element_based_functional_group_dominance,nitrogen-containing,Nitrogen,nitrogen,nitrogen,Nitrogen,nitrogen
+How many C atoms does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide have?,molecular_formula (parsed),20,20,20,20,20,20
+How many N atoms does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide have?,molecular_formula (parsed),4,4,4,4,4,4
+Does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide contain a thiol group?,functional_groups (thiol boolean),No,No,No,No,No,No
+Does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide contain a urea group?,functional_groups (urea boolean),No,No,No,No,No,No
+Does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide contain a carboxylic acid group?,functional_groups (carboxylic_acid boolean),No,No,No,No,No,No
+"Based on common functional groups, which is the most basic group in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?",acid_base_hierarchy_base,tertiary amine,amine,amine,amine,amine,amine
+How many nitrogen atoms are in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,molecular_formula (parsed),4,3,3,3,3,3
+What is the carbon to hydrogen ratio in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,molecular_formula (parsed),20:16,1.2,1.2,1.2,1.2,1.2
+What is the degree of unsaturation of (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,molecular_formula (calculated),15,10,10,10,10,10
+Which set does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide deviate from more: Lipinski or Veber?,multi_rule_comparison,Neither,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski
+What is the length of the canonical SMILES for (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,iupac_to_smiles_length,53,55,58,58,55,56
+What is the most abundant functional group in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,most_abundant_functional_group_with_ties,tertiary amine,amide,amide,amide,amide,amide
+Is the most abundant functional group in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide polar or nonpolar?,functional_group_polarity,nonpolar,polar,polar,polar,polar,polar
+Does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide contain a hydrolyzable functional group?,hydrolyzable_functional_groups,No,Yes,Yes,Yes,Yes,Yes
+Does (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide contain both an aldehyde and a ketone group?,aldehyde_ketone_exclusivity,No,No,No,No,No,No
+How many distinct functional group types are present in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide?,functional_group_diversity,5,amide,amide,amide,amide,amide
+"Which functional group is more numerous in (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide, alcohol or amine?",alcohol_vs_amine_count,amine,amine,amine,amine,amine,amine
+Is (E)-3-[1-(2-amino-2-oxoethyl)indol-3-yl]-2-cyano-N-phenylprop-2-enamide primarily a nitrogen-containing or oxygen-containing compound?,element_based_functional_group_dominance,nitrogen-containing,nitrogen,nitrogen,nitrogen,nitrogen,nitrogen
+How many C atoms does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone have?,molecular_formula (parsed),21,23,23,23,23,23
+How many N atoms does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone have?,molecular_formula (parsed),4,5,5,5,5,5
+Does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone contain a urea group?,functional_groups (urea boolean),No,No,No,No,No,No
+Does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone contain a alkyne group?,functional_groups (alkyne boolean),No,No,No,No,No,No
+Does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone contain a secondary amine group?,functional_groups (secondary_amine boolean),No,Yes,Yes,Yes,Yes,Yes
+"Based on common functional groups, which is the most basic group in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?",acid_base_hierarchy_base,tertiary amine,piperidine,piperidine,piperidine,piperidine,piperidine
+How many nitrogen atoms are in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,molecular_formula (parsed),4,4,5,4,5,5
+What is the carbon to hydrogen ratio in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,molecular_formula (parsed),21:26,1.2,1.2,1.2,1.2,1.2
+What is the degree of unsaturation of (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,molecular_formula (calculated),11,10,11,10,11,11
+Which set does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone deviate from more: Lipinski or Veber?,multi_rule_comparison,Neither,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski
+What is the length of the canonical SMILES for (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,iupac_to_smiles_length,58,56,58,56,61,58
+What is the most abundant functional group in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,most_abundant_functional_group_with_ties,tertiary amine,sulfonyl and ketone,sulfonyl and ketone,sulfonyl and ketone,sulfonyl and ketone,sulfonyl and ketone
+Is the most abundant functional group in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone polar or nonpolar?,functional_group_polarity,polar,polar,polar,polar,polar,polar
+Does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone contain a hydrolyzable functional group?,hydrolyzable_functional_groups,No,Yes,Yes,Yes,Yes,Yes
+Does (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone contain both an aldehyde and a ketone group?,aldehyde_ketone_exclusivity,No,No,No,No,No,No
+How many distinct functional group types are present in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone?,functional_group_diversity,5,ketone and sulfonyl and amine,ketone and sulfonyl and amine,ketone and sulfonyl and amine,ketone and sulfonyl and amine,ketone and sulfonyl and amine
+"Which functional group is more numerous in (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone, alcohol or amine?",alcohol_vs_amine_count,amine,amine,amine,amine,amine,amine
+Is (3-piperidin-1-ylsulfonylphenyl)-(4-pyridin-4-ylpiperazin-1-yl)methanone primarily a nitrogen-containing or oxygen-containing compound?,element_based_functional_group_dominance,nitrogen-containing,nitrogen,nitrogen,nitrogen,nitrogen,nitrogen
+"How many H atoms does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate have?",molecular_formula (parsed),20,24,22,22,22,22
+"How many N atoms does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate have?",molecular_formula (parsed),2,3,3,3,3,3
+"Does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate contain a phenol group?",functional_groups (phenol boolean),No,No,No,No,No,No
+"Does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate contain a secondary alcohol group?",functional_groups (secondary_alcohol boolean),No,No,No,No,No,No
+"Does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate contain a ether group?",functional_groups (ether boolean),Yes,Yes,Yes,Yes,Yes,Yes
+"Based on common functional groups, which is the most basic group in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",acid_base_hierarchy_base,ketone,amine,amine,amine,amine,amine
+"How many nitrogen atoms are in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",molecular_formula (parsed),2,2,2,2,2,2
+"What is the carbon to hydrogen ratio in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",molecular_formula (parsed),18:20,1.2,1.2,1.2,1.2,1.2
+"What is the degree of unsaturation of [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",molecular_formula (calculated),9,12,12,12,12,12
+"Which set does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate deviate from more: Lipinski or Veber?",multi_rule_comparison,Neither,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski
+"What is the length of the canonical SMILES for [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",iupac_to_smiles_length,51,77,77,77,77,77
+"What is the most abundant functional group in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",most_abundant_functional_group_with_ties,ether,ether,ether,ether,ether,ether
+"Is the most abundant functional group in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate polar or nonpolar?",functional_group_polarity,nonpolar,polar,polar,polar,polar,polar
+"Does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate contain a hydrolyzable functional group?",hydrolyzable_functional_groups,Yes,Yes,Yes,Yes,Yes,Yes
+"Does [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate contain both an aldehyde and a ketone group?",aldehyde_ketone_exclusivity,No,No,No,No,No,No
+"Which carbonyl functional group is present in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",carbonyl_type_presence,ketone and ester,Ketone and ester,Ketone and ester,Ketone and ester,Ketone and ester,Ketone and ester
+"How many distinct functional group types are present in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate?",functional_group_diversity,6,7,7,7,7,7
+"Which functional group is more numerous in [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate, alcohol or amine?",alcohol_vs_amine_count,Same,amine,amine,amine,amine,amine
+"Is [2-[[4-(difluoromethoxy)-3-methoxyphenyl]methylamino]-2-oxoethyl] 3-ethyl-5-methyl-1,2-oxazole-4-carboxylate primarily a nitrogen-containing or oxygen-containing compound?",element_based_functional_group_dominance,oxygen-containing,oxygen,oxygen,oxygen,oxygen,oxygen
+How many C atoms does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one have?,molecular_formula (parsed),22,23,23,23,23,23
+How many N atoms does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one have?,molecular_formula (parsed),5,5,5,5,5,5
+Does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one contain a ether group?,functional_groups (ether boolean),No,No,No,No,No,No
+Does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one contain a carboxylic acid group?,functional_groups (carboxylic_acid boolean),No,No,No,No,No,No
+Does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one contain a primary amide group?,functional_groups (primary_amide boolean),No,No,No,No,No,No
+"Based on common functional groups, which is the most acidic group in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?",acid_base_hierarchy_acid,pyrrole,tetrazole,tetrazole,tetrazole,tetrazole,tetrazole
+"Based on common functional groups, which is the most basic group in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?",acid_base_hierarchy_base,secondary amine,amine,indole,indole,indole,indole
+How many nitrogen atoms are in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,molecular_formula (parsed),5,5,5,5,5,5
+What is the carbon to hydrogen ratio in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,molecular_formula (parsed),22:23,1.5,1.2,1.2,1.5,1.2
+What is the degree of unsaturation of (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,molecular_formula (calculated),14,13,13,13,13,13
+Which set does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one deviate from more: Lipinski or Veber?,multi_rule_comparison,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski,Lipinski
+What is the length of the canonical SMILES for (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,iupac_to_smiles_length,58,72,72,72,72,72
+What is the most abundant functional group in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,most_abundant_functional_group_with_ties,ketone,ketone,ketone,ketone,ketone,ketone
+Is the most abundant functional group in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one polar or nonpolar?,functional_group_polarity,nonpolar,polar,polar,polar,polar,polar
+Does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one contain a hydrolyzable functional group?,hydrolyzable_functional_groups,No,Yes,Yes,Yes,Yes,Yes
+Does (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one contain both an aldehyde and a ketone group?,aldehyde_ketone_exclusivity,No,No,No,No,No,No
+Which carbonyl functional group is present in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,carbonyl_type_presence,ketone,ketone,ketone,ketone,ketone,ketone
+How many distinct functional group types are present in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one?,functional_group_diversity,4,ketone and indole and tetrazole,ketone and indole and tetrazole,ketone and indole and tetrazole,ketone and indole and tetrazole,ketone and indole and tetrazole
+"Which functional group is more numerous in (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one, alcohol or amine?",alcohol_vs_amine_count,amine,amine,amine,amine,amine,amine
+Is (2R)-1-(2-methyl-1H-indol-3-yl)-2-[5-(4-propan-2-ylphenyl)tetrazol-2-yl]propan-1-one primarily a nitrogen-containing or oxygen-containing compound?,element_based_functional_group_dominance,nitrogen-containing,nitrogen,nitrogen,nitrogen,nitrogen,nitrogen
+How many N atoms does [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate have?,molecular_formula (parsed),1,1,1,1,1,1
+How many O atoms does [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate have?,molecular_formula (parsed),5,7,7,7,7,7
+Does [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate contain a secondary amine group?,functional_groups (secondary_amine boolean),No,Yes,Yes,Yes,Yes,Yes
+Does [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate contain a aldehyde group?,functional_groups (aldehyde boolean),No,No,No,No,No,No
+Does [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate contain a guanidine group?,functional_groups (guanidine boolean),No,No,No,No,No,No
+How many nitrogen atoms are in [3-[[(2-bromobenzoyl)-(furan-2-ylmethyl)amino]methyl]phenyl] 3-(trifluoromethyl)benzenesulfonate?,molecular_formula (parsed),1,1,1,1,1,1

@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+Generate chemistry Q&A pairs from PubChem for LLM training.
+Outputs:
+  - molecular_properties.csv
+  - chemistry_qa_dataset.json
+"""
 
 import time
 import json
@@ -7,13 +13,19 @@ import random
 from typing import List, Dict, Optional, Tuple, Any, Set
 import pandas as pd
 import pubchempy as pcp
+import numpy as np
+
+# Reproducibility
+SEED = 42
+random.seed(SEED)
+np.random.seed(SEED)
 
 # Optional RDKit imports
 try:
     from rdkit import Chem
     from rdkit.Chem.Scaffolds import MurckoScaffold
     from rdkit.Chem import Descriptors
-    from rdkit.Chem.rdFMCS import FindMCS 
+    from rdkit.Chem.rdFMCS import FindMCS
     rdkit_available = True
 except ImportError:
     rdkit_available = False
@@ -22,60 +34,89 @@ except ImportError:
 # ---------- Functional group hierarchy ----------
 FUNCTIONAL_GROUP_HIERARCHY = {
     'ester': ['ether'], 'lactone': ['ether', 'ester'], 'carboxylic_acid': ['ketone'],
-    'carboxylate': ['ketone'], 'primary_amide': ['ketone'], 'secondary_amide': ['ketone'],
-    'tertiary_amide': ['ketone'], 'acyl_chloride': ['ketone'], 'anhydride': ['ketone', 'ester'],
+    'carboxylate': ['ketone'], 'primary_amide': ['ketone', 'primary_amine'], 'secondary_amide': ['ketone', 'secondary_amine'],
+    'tertiary_amide': ['ketone', 'tertiary_amine'], 'acyl_chloride': ['ketone'], 'anhydride': ['ketone', 'ester'],
     'aldehyde': ['ketone'], 'thioester': ['thioketone'], 'carbamate': ['ester', 'ether'],
-    'carbonate': ['ester', 'ether'], 
-    'urea': ['primary_amide', 'secondary_amide', 'tertiary_amide'], # Added tertiary_amide here
-    'sulfonamide': ['sulfone'], 'sulfonic_acid': ['sulfone'], 'hemiacetal': ['ether', 'secondary_alcohol'],
+    'carbonate': ['ester', 'ether'],
+    'urea': ['primary_amide', 'secondary_amide', 'tertiary_amide'],
+    'sulfonamide': ['sulfone', 'primary_amine', 'secondary_amine', 'tertiary_amine'], 'sulfonic_acid': ['sulfone'], 'hemiacetal': ['ether', 'secondary_alcohol'],
     'acetal': ['ether'], 'phosphate': ['ester', 'ether'], 'phosphonate': ['ester', 'ether'],
 }
 
-def filter_subgroups_by_location(mol, detected_groups: List[str], fg_smarts: Dict[str, str]) -> List[str]:
+# Aliases for counting coarse-grained groups like "alcohol" -> sum of primary/secondary/tertiary
+FG_ALIASES = {
+    'alcohol': ['primary_alcohol', 'secondary_alcohol', 'tertiary_alcohol'],
+    'amine': ['primary_amine', 'secondary_amine', 'tertiary_amine'],
+}
+
+# ---------- Helper: filter subgroups using counts and atom overlap ----------
+def filter_subgroups_by_location_counts(mol, fg_counts: Dict[str, int], fg_smarts: Dict[str, str]) -> Dict[str, int]:
     """
-    Remove subgroups only when they overlap with parent groups at the same location.
+    Given a mol and a dict of counts per functional group (fg_counts),
+    return a filtered dict where subgroup matches that overlap strongly
+    with parent functional groups are decremented/removed.
     """
-    if not detected_groups or mol is None: return detected_groups
-    groups_set = set(detected_groups)
+    if not fg_counts or mol is None:
+        return fg_counts
+
     group_atoms: Dict[str, List[Set[int]]] = {}
-    
-    for group in detected_groups:
-        if group not in fg_smarts: continue
+
+    # Collect atom index sets for each group
+    for group, count in fg_counts.items():
+        if count == 0 or group not in fg_smarts:
+            continue
         try:
             patt = Chem.MolFromSmarts(fg_smarts[group])
-            if patt: group_atoms[group] = [set(match) for match in mol.GetSubstructMatches(patt)]
-        except Exception: continue
-    
-    to_remove: Set[str] = set()
+            if patt:
+                group_atoms[group] = [set(m) for m in mol.GetSubstructMatches(patt)]
+        except Exception:
+            # ignore SMARTS parse failures
+            continue
+
+    # For each parent->subgroup relation, remove subgroup matches that are
+    # clearly inside parent matches (to avoid double counting)
     for parent, subgroups in FUNCTIONAL_GROUP_HIERARCHY.items():
-        if parent not in groups_set or parent not in group_atoms: continue
-        parent_atom_sets = group_atoms[parent]
+        if parent not in group_atoms:
+            continue
+        parent_atoms = group_atoms[parent]
+
         for subgroup in subgroups:
-            if subgroup not in groups_set or subgroup not in group_atoms: continue
-            subgroup_atom_sets = group_atoms[subgroup]
-            all_overlap = True
-            for sub_atoms in subgroup_atom_sets:
-                overlaps_with_parent = False
-                for parent_atoms in parent_atom_sets:
-                    if sub_atoms.issubset(parent_atoms) or len(sub_atoms & parent_atoms) >= len(sub_atoms) * 0.5:
-                        overlaps_with_parent = True
-                        break
-                if not overlaps_with_parent:
-                    all_overlap = False
-                    break
-            if all_overlap: to_remove.add(subgroup)
-    return [g for g in detected_groups if g not in to_remove]
+            if subgroup not in group_atoms:
+                continue
+
+            keep = []
+            for sub_atoms in group_atoms[subgroup]:
+                overlaps = any(
+                    sub_atoms.issubset(p) or len(sub_atoms & p) >= 0.5 * len(sub_atoms)
+                    for p in parent_atoms
+                )
+                # keep only those subgroup matches that do NOT overly overlap with parent
+                if not overlaps:
+                    keep.append(sub_atoms)
+
+            group_atoms[subgroup] = keep
+            fg_counts[subgroup] = len(keep)
+
+    # Return only non-zero counts
+    return {k: v for k, v in fg_counts.items() if v > 0}
 
 # ---------- Utility: RDKit-based derived features ----------
 def compute_rdkit_features(smiles: str) -> Dict[str, Any]:
     """
-    Given a SMILES string, compute functional groups and scaffolds.
-    (Stereochemistry and Fsp3 calculations removed).
+    Compute RDKit-derived features. Outputs:
+      - murcko_scaffold (smiles or None)
+      - functional_groups (dict mapping group_name -> count) or None
+      - rdkit_mol (Mol) or None
+      - num_rings (int) or None
+      - degree_of_unsaturation (int) or None
     """
     features = {
         'murcko_scaffold': None,
         'functional_groups': None,
         'rdkit_mol': None,
+        'num_rings': None,
+        'degree_of_unsaturation': None,
+        'rdkit_atom_counts': None
     }
 
     if not rdkit_available or not smiles:
@@ -83,9 +124,10 @@ def compute_rdkit_features(smiles: str) -> Dict[str, Any]:
 
     try:
         mol = Chem.MolFromSmiles(smiles)
-        if mol is None: return features
+        if mol is None:
+            return features
 
-        # Murcko scaffold
+        # Murcko Scaffold
         try:
             scaffold = MurckoScaffold.GetScaffoldForMol(mol)
             if scaffold and scaffold.GetNumAtoms() > 0:
@@ -93,64 +135,72 @@ def compute_rdkit_features(smiles: str) -> Dict[str, Any]:
         except Exception:
             features['murcko_scaffold'] = None
 
-        # Functional groups - comprehensive detection
+        # Functional group SMARTS dictionary
         fg_smarts = {
-            'primary_amine': '[#7X3;H2;!$(NC=O);!$(NS=O)]', 
+            'primary_amine': '[#7X3;H2;!$(NC=O);!$(NS=O)]',
             'secondary_amine': '[#7X3;H1;!$(NC=O);!$(NS=O)]([#6])[#6]',
-            'tertiary_amine': '[#7X3;H0;!$(NC=O);!$(NS=O)]([#6])([#6])[#6]', 
+            'tertiary_amine': '[#7X3;H0;!$(NC=O);!$(NS=O)]([#6])([#6])[#6]',
             'quaternary_ammonium': '[#7+;H0]([#6])([#6])([#6])[#6]',
-            
-            # Amides & Ureas (Using generic atom tags to catch cyclic/aromatic variants)
-            'primary_amide': '[#7X3;H2][#6X3](=O)[#6]', 
-            'secondary_amide': '[#7X3;H1]([#6])[#6X3](=O)[#6]',
-            'tertiary_amide': '[#7X3;H0]([#6])([#6])[#6X3](=O)[#6]', 
+            'primary_amide': '[NX3;H2][CX3](=O)',
+            'secondary_amide': '[NX3;H1][CX3](=O)',
+            'tertiary_amide': '[NX3;H0][CX3](=O)',
             'urea': '[#7X3;!@R][#6X3](=O)[#7X3;!@R]',
-            'carbamate': '[#7X3][#6X3](=O)[OX2]', 
-            
-            'imine': '[#7X2]=[#6X3]', 'nitrile': '[#7X1]#[#6X2]',
-            'nitro': '[$([#7X3](=O)=O),$([#7X3+](=O)[O-])][!#8]', 
+            'carbamate': '[#7X3][#6X3](=O)[OX2]',
+            'imine': '[NX2]=[CX3]', 'nitrile': '[N+](=O)[O-]',
+            'nitro': '[$([#7X3](=O)=O),$([#7X3+](=O)[O-])][!#8]',
             'nitroso': '[#7X2](=O)[#6]', 'azide': '[#7X2]=[#7X2+]=[#7X1-]',
-            
-            # Oxygen groups
             'primary_alcohol': '[#6X4][OX2H]', 'secondary_alcohol': '[#6X4H]([#6])[OX2H]',
             'tertiary_alcohol': '[#6X4]([#6])([#6])([#6])[OX2H]', 'phenol': 'c[OX2H]',
             'carboxylic_acid': '[#6X3](=O)[OX2H1]', 'carboxylate': '[#6X3](=O)[OX1-,OX2-]',
-            'ester': '[#6X3](=O)[OX2][#6;!$(C=O)]', 'lactone': '[#6]~1~[#6]~[#6](=O)[OX2]~[#6]~[#6]~1',
-            'ketone': '[#6][#6X3](=O)[#6]', 'aldehyde': '[#6X3H1](=O)[#6]', 
+            'ester': '[#6X3](=O)[OX2][#6;!$(C=O)]', 'lactone': '[OX2r][CX3r](=O)',
+            'ketone': '[CX3](=O)[#6]', 'aldehyde': '[CX3H1](=O)',
             'acyl_chloride': '[#6X3](=O)[Cl]',
-            'anhydride': '[#6X3](=O)[OX2][#6X3](=O)', 'ether': '[OD2]([#6])[#6]', 
-            
-            # Sulfur/Phosphorus
+            'anhydride': '[#6X3](=O)[OX2][#6X3](=O)', 'ether': '[OX2]([#6])[#6;!$(C=O)]',
             'thiol': '[SX2H]', 'sulfide': '[SX2]([#6])[#6]', 'disulfide': '[SX2][SX2]',
             'sulfoxide': '[SX3](=O)([#6])[#6]', 'sulfone': '[SX4](=O)(=O)([#6])[#6]',
-            'sulfonamide': '[SX4](=O)(=O)[#7X3]', 
-            'phosphate': '[PX4](=O)([OX2])([OX2])[OX2]', 
-            
-            # Halogens & Aromatics
+            'sulfonamide': '[SX4](=O)(=O)[#7X3]',
+            'phosphate': '[PX4](=O)([OX2-,OX2H])([OX2-,OX2H])[OX2-,OX2H]',
             'fluoride': '[FX1]', 'chloride': '[ClX1]', 'bromide': '[BrX1]', 'iodide': '[IX1]',
             'benzene': 'c1ccccc1', 'pyridine': 'n1ccccc1',
-            'pyrrole': '[nH]1cccc1', 'furan': 'o1cccc1', 'thiophene': 's1cccc1', 
-            
-            # FIX: Imidazole now matches c1ncn1 (generic) or substituted N
-            'imidazole': 'c1nc[n,nH,nX3]c1', 
-            
+            'pyrrole': '[nH]1cccc1', 'furan': 'o1cccc1', 'thiophene': 's1cccc1',
+            'imidazole': 'n1cc[nH]c1',
             'alkene': '[CX3]=[CX3]', 'alkyne': '[CX2]#[CX2]',
+            'guanidine': '[NX3][CX3](=[NX3])[NX3]',
+            'amidine': '[NX3]=[CX3][NX3]',
+            'hemiacetal':'[CX4H0]([OX2H])[OX2][#6]',
+            'acetal':'[CX4H0]([OX2][#6])([OX2][#6])'
         }
-        
-        matched = []
+
+        # Count each FG occurrence
+        fg_counts = {}
         for name, smarts in fg_smarts.items():
             try:
                 patt = Chem.MolFromSmarts(smarts)
-                if patt and mol.HasSubstructMatch(patt): matched.append(name)
-            except Exception: pass
-        
-        filtered_groups = filter_subgroups_by_location(mol, matched, fg_smarts)
-        features['functional_groups'] = filtered_groups if filtered_groups else None
-        
-        # Save RDKit mol object for ring logic later
-        features['rdkit_mol'] = mol
+                if patt:
+                    fg_counts[name] = len(mol.GetSubstructMatches(patt))
+                else:
+                    fg_counts[name] = 0
+            except Exception:
+                fg_counts[name] = 0
+
+        # Filter counts to avoid double counting (esters vs ethers, etc.)
+        fg_counts = filter_subgroups_by_location_counts(mol, fg_counts, fg_smarts)
+        features['functional_groups'] = fg_counts if fg_counts else None
+
+        # Number of Rings
+        ring_info = mol.GetRingInfo()
+        features['num_rings'] = ring_info.NumRings()
+
+        # Degree of Unsaturation (DOU)
+        mol_formula_str = Chem.rdMolDescriptors.CalcMolFormula(mol)
+        atom_counts = parse_formula(mol_formula_str) 
+        features['rdkit_atom_counts'] = atom_counts # Store this reliable count
+
+        # 2. Re-calculate DOU using this RDKit-derived count
+        features['degree_of_unsaturation'] = calculate_dou(atom_counts)
 
     except Exception:
+        # Fail silently but return what we have
         pass
 
     return features
@@ -158,6 +208,8 @@ def compute_rdkit_features(smiles: str) -> Dict[str, Any]:
 # ---------- Core Utility Functions ----------
 def parse_formula(formula: str) -> Dict[str, int]:
     atom_counts = {}
+    if not formula:
+        return atom_counts
     for match in re.finditer(r'([A-Z][a-z]?)(\d*)', formula):
         atom, count_str = match.groups()
         atom_counts[atom] = int(count_str) if count_str else 1
@@ -170,68 +222,77 @@ def calculate_dou(atom_counts: Dict[str, int]) -> int:
     X = sum(atom_counts.get(x, 0) for x in ['F', 'Cl', 'Br', 'I'])
     return (2*C + 2 + N - H - X) // 2
 
-def compute_lcs_smarts(mol1_smiles: str, mol2_smiles: str) -> Optional[str]:
-    """Computes the SMARTS of the Maximum Common Substructure (MCS)."""
-    if not rdkit_available: return None
+def compute_mcs_info(smiles_a: str, smiles_b: str) -> Tuple[Optional[str], Optional[int]]:
+    """
+    Returns (smarts_string, num_atoms) for the MCS between smiles_a and smiles_b.
+    If RDKit not available or MCS fails, returns (None, None).
+    """
+    if not rdkit_available:
+        return None, None
     try:
-        mol1 = Chem.MolFromSmiles(mol1_smiles)
-        mol2 = Chem.MolFromSmiles(mol2_smiles)
-        if mol1 and mol2:
-            mcs_result = FindMCS([mol1, mol2])
-            if mcs_result.numAtoms > 0:
-                return mcs_result.smartsString
+        mol1 = Chem.MolFromSmiles(smiles_a)
+        mol2 = Chem.MolFromSmiles(smiles_b)
+        if mol1 is None or mol2 is None:
+            return None, None
+        mcs_result = FindMCS([mol1, mol2])
+        if mcs_result is None or mcs_result.numAtoms == 0:
+            return None, None
+        return mcs_result.smartsString, int(mcs_result.numAtoms)
     except Exception:
-        return None
-    return None
+        return None, None
 
 # ---------- Main generator class ----------
 class PubChemQADataset:
     def __init__(self, output_prefix: str = "chemistry_qa_dataset"):
         self.output_prefix = output_prefix
-        self.csv_file = f"{output_prefix}_properties.csv"
-        self.qa_file = f"{output_prefix}_qa.json"
+        self.csv_file = f"molecular_properties.csv"
+        self.qa_file = f"{output_prefix}.json"
         self.df = pd.DataFrame()
         self.failed_cids: List[Tuple[int, str]] = []
         self.fg_smarts_list = [
             'primary_alcohol', 'secondary_alcohol', 'phenol', 'carboxylic_acid',
             'ketone', 'aldehyde', 'ester', 'ether', 'alkene', 'alkyne',
             'primary_amine', 'secondary_amine', 'primary_amide', 'sulfone',
-            'thiol', 'nitrile'
+            'thiol', 'nitrile', 'carbamate', 'urea', 'guanidine' # Note: full list is longer in RDKit
         ]
+        # local RNG for pandas sampling reproducibility
+        self.pandas_random_state = SEED
 
-    def fetch_compound_basic(self, cid: int) -> Optional[Dict[str, Any]]:
+    def fetch_compound_basic(self, cid: int, retries: int = 3, backoff: float = 1.5) -> Optional[Dict[str, Any]]:
         """
-        Fetch compound basic properties from PubChem.
-        Stereo queries and Exact Mass are disabled.
+        Fetch basic PubChem info with simple retry/backoff.
         """
-        try:
-            compound = pcp.Compound.from_cid(cid)
-            if compound is None:
-                return None
+        attempt = 0
+        while attempt < retries:
+            try:
+                compound = pcp.Compound.from_cid(cid)
+                if compound is None:
+                    return None
 
-            name = compound.iupac_name or f"Compound {cid}"
-            canonical_smiles = getattr(compound, 'connectivity_smiles', None)
-            
-            data = {
-                'cid': cid,
-                'name': name,
-                'canonical_smiles': canonical_smiles,
-                'molecular_formula': getattr(compound, 'molecular_formula', None),
-                'molecular_weight': getattr(compound, 'molecular_weight', None), # Kept
-                # 'exact_mass': getattr(compound, 'exact_mass', None),  <-- Removed as requested
-                'h_bond_donors': getattr(compound, 'h_bond_donor_count', None),
-                'h_bond_acceptors': getattr(compound, 'h_bond_acceptor_count', None),
-                'rotatable_bonds': getattr(compound, 'rotatable_bond_count', None),
-                'topological_psa': getattr(compound, 'tpsa', None),
-                'logp': getattr(compound, 'xlogp', None),
-                'heavy_atom_count': getattr(compound, 'heavy_atom_count', None),
-            }
+                # choose best available smiles field
+                canonical_smiles = getattr(compound, 'connectivity_smiles', None) or getattr(compound, 'isomeric_smiles', None) or getattr(compound, 'canonical_smiles', None)
 
-            return data
-
-        except Exception as e:
-            self.failed_cids.append((cid, str(e)))
-            return None
+                name = compound.iupac_name or f"Compound {cid}"
+                data = {
+                    'cid': cid,
+                    'name': name,
+                    'canonical_smiles': canonical_smiles,
+                    'molecular_formula': getattr(compound, 'molecular_formula', None),
+                    'molecular_weight': getattr(compound, 'molecular_weight', None),
+                    'h_bond_donors': getattr(compound, 'h_bond_donor_count', None),
+                    'h_bond_acceptors': getattr(compound, 'h_bond_acceptor_count', None),
+                    'rotatable_bonds': getattr(compound, 'rotatable_bond_count', None),
+                    'topological_psa': getattr(compound, 'tpsa', None),
+                    'logp': getattr(compound, 'xlogp', None),
+                    'heavy_atom_count': getattr(compound, 'heavy_atom_count', None),
+                }
+                return data
+            except Exception as e:
+                attempt += 1
+                time.sleep(backoff * attempt)
+        # record failure
+        self.failed_cids.append((cid, f"fetch_failed_after_{retries}_attempts"))
+        return None
 
     def build_dataframe(self, cid_list: List[int], use_rdkit_if_available: bool = True) -> None:
         rows = []
@@ -244,20 +305,16 @@ class PubChemQADataset:
                 print(" failed")
                 continue
 
-            # Use canonical_smiles (ignoring stereo)
             smiles_for_rdkit = raw.get('canonical_smiles')
             rdkit_feats = compute_rdkit_features(smiles_for_rdkit) if use_rdkit_if_available else {}
 
-            # Deterministic derived fields
             mw, hd, ha, logp = raw.get('molecular_weight'), raw.get('h_bond_donors'), raw.get('h_bond_acceptors'), raw.get('logp')
             tpsa, rb = raw.get('topological_psa'), raw.get('rotatable_bonds')
-            
-            # Lipinski's Rule of Five
+
             lipinski_pass = None
             if None not in (mw, hd, ha, logp):
                 lipinski_pass = (mw <= 500 and hd <= 5 and ha <= 10 and logp <= 5)
-            
-            # Veber's Rule
+
             veber_pass = None
             if None not in (tpsa, rb):
                 veber_pass = (rb <= 10 and tpsa <= 140)
@@ -271,116 +328,347 @@ class PubChemQADataset:
 
             rows.append(row)
             print(" done")
+            # polite pause (still deterministic because random seeds are set)
+            time.sleep(0.3)
 
         self.df = pd.DataFrame(rows)
-        # reorder columns
+        # ensure cid is first column
         cols = list(self.df.columns)
         if 'cid' in cols:
             cols.insert(0, cols.pop(cols.index('cid')))
         self.df = self.df.reindex(columns=cols)
 
-    # ---------- Deterministic Q&A generation ----------
+    # ---------- Comprehensive Q&A generation ----------
     def qa_from_dataframe(self):
         qa_list = []
+
+        # Define Acidic and Basic Hierarchies (pKa of the acidic proton or the conjugate acid)
+        # Strongest Acid (lowest pKa) comes first
+        ACIDIC_HIERARCHY = [
+            ('sulfonic_acid', -1.0), ('carboxylic_acid', 4.5), 
+            # Note: Active methylene/imide SMARTS are complex, relying on counting 'ketone' or 'primary_amide' might be misleading without specific patterns.
+            ('phenol', 10.0), 
+            ('thiol', 10.5), 
+            ('pyrrole', 17.0), # Representing aromatic N-H acids (e.g., indole, pyrrole)
+            ('primary_alcohol', 17.0), ('secondary_alcohol', 17.0), ('tertiary_alcohol', 17.0)
+        ]
         
-        countable_functional_groups = ['alcohol', 'amine', 'ketone', 'ether', 'ester', 'phenol', 'aldehyde', 'nitrile']
+        # Strongest Base (highest pKa of conjugate acid) comes first
+        BASIC_HIERARCHY = [
+            ('guanidine', 13.6),
+            ('amidine', 12.0),
+            ('tertiary_amine', 10.0), ('secondary_amine', 10.0), ('primary_amine', 9.5),
+            ('imidazole', 7.0), 
+            ('pyridine', 5.2),
+            ('ketone', -7.0), ('aldehyde', -7.0), ('ether', -3.5), # Oxygen bases (weak)
+        ]
+
+        # These are the coarse-grained groups we will ask about; mapping to aliases where needed
+        fine_grained_groups = [
+        'primary_alcohol', 'secondary_alcohol', 'tertiary_alcohol',
+        'primary_amine', 'secondary_amine', 'tertiary_amine',
+        'ketone', 'aldehyde', 'ester', 'ether', 'phenol', 'nitrile'
+        ]
         countable_atoms = ['Cl', 'Br', 'F', 'I', 'N', 'O', 'S', 'P', 'C', 'H']
-        all_possible_groups = self.fg_smarts_list + ['carbamate', 'urea', 'guanidine'] 
+        all_possible_groups = self.fg_smarts_list
 
         for idx, row in self.df.iterrows():
             name = row.get('name', f'compound_{idx}')
-            fg = row.get('functional_groups', [])
+            fg = row.get('functional_groups', {}) or {}
             formula = row.get('molecular_formula', '')
             mol = row.get('rdkit_mol', None)
             cid = row.get('cid')
-            
-            atom_counts = parse_formula(formula) if formula else {}
+            canonical_smiles = row.get('canonical_smiles')
 
-            # 1. Counting Questions
-            fg_to_count = random.sample(countable_functional_groups, k=min(3, len(countable_functional_groups)))
-            for group in fg_to_count:
-                count = sum(1 for f in fg if group in f) if isinstance(fg, (list, set)) else 0
-                qa_list.append({'question': f"How many {group.replace('_',' ')} groups does {name} contain?", 'answer': str(count), 'cid': cid, 'answer_source': 'functional_groups (counted)'})
-            
-            if formula:
-                atoms_to_count = random.sample(countable_atoms, k=min(3, len(countable_atoms)))
-                for atom in atoms_to_count:
-                    atom_count = atom_counts.get(atom, 0)
-                    qa_list.append({'question': f"How many {atom} atoms does {name} have?", 'answer': str(atom_count), 'cid': cid, 'answer_source': 'molecular_formula (parsed)'})
+            atom_counts = row.get('rdkit_atom_counts', {}) # Fetched from the new field
+            if not atom_counts:
+                formula = row.get('molecular_formula', '')
+                atom_counts = parse_formula(formula) if formula else {}
 
-            # 2. Boolean Functional Group Queries
-            queried_groups = random.sample(all_possible_groups, k=3)
+            # --- Counting Questions: prefer non-zero groups ---
+            # build list of non-zero coarse groups using aliases
+            fg_nonzero = []
+            for g in fine_grained_groups:
+                if g in FG_ALIASES:
+                    total = sum(fg.get(sub, 0) for sub in FG_ALIASES[g])
+                else:
+                    total = fg.get(g, 0)
+                if total > 0:
+                    fg_nonzero.append(g)
+
+            # Atom counting questions (choose atoms with non-zero count if possible)
+            atom_nonzero = [a for a in countable_atoms if atom_counts.get(a, 0) > 0]
+            try:
+                if len(atom_nonzero) >= 2:
+                    atoms_to_count = random.sample(atom_nonzero, k=2)
+                else:
+                    atoms_to_count = random.sample(countable_atoms, k=min(2, len(countable_atoms)))
+            except ValueError:
+                atoms_to_count = countable_atoms[:2]
+
+            for atom in atoms_to_count:
+                atom_count = atom_counts.get(atom, 0)
+                qa_list.append({
+                    'question': f"How many {atom} atoms does {name} have?",
+                    'answer': str(atom_count),
+                    'cid': cid,
+                    'answer_source': 'molecular_formula (parsed)'
+                })
+
+            # --- Boolean Functional Group Queries (short answers) ---
+            try:
+                queried_groups = random.sample(all_possible_groups, k=min(3, len(all_possible_groups)))
+            except ValueError:
+                queried_groups = all_possible_groups[:3]
+
             for group in queried_groups:
-                has_group = any(group in x for x in fg) if isinstance(fg, (list, set)) else False
-                qa_list.append({'question': f"Does {name} contain a {group.replace('_', ' ')} group?", 'answer': 'Yes' if has_group else 'No', 'cid': cid, 'answer_source': f'functional_groups ({group} boolean)'})
+                has_group = fg.get(group, 0) > 0
+                qa_list.append({
+                    'question': f"Does {name} contain a {group.replace('_', ' ')} group?",
+                    'answer': 'Yes' if has_group else 'No',
+                    'cid': cid,
+                    'answer_source': f'functional_groups ({group} boolean)'
+                })
 
-            # 3. Formula Analysis
+            # --- Acid/Base Reasoning ---
+            
+            # 1. Most Acidic Group (Strongest Acid/Lowest pKa)
+            most_acidic = next((g for g, _ in ACIDIC_HIERARCHY if fg.get(g,0) > 0), None)
+            if most_acidic:
+                qa_list.append({
+                    'question': f"Based on common functional groups, which is the most acidic group in {name}?",
+                    'answer': most_acidic.replace('_',' '),
+                    'cid': cid,
+                    'answer_source': 'acid_base_hierarchy_acid'
+                })
+            
+            # 2. Most Basic Group (Strongest Base/Highest pKa of Conjugate Acid)
+            most_basic = next((g for g, _ in BASIC_HIERARCHY if fg.get(g,0) > 0), None)
+            if most_basic:
+                qa_list.append({
+                    'question': f"Based on common functional groups, which is the most basic group in {name}?",
+                    'answer': most_basic.replace('_',' '),
+                    'cid': cid,
+                    'answer_source': 'acid_base_hierarchy_base'
+                })
+
+
+            if most_basic:
+                qa_list.append({
+                    'question': f"Based on common functional groups, which is the most basic group in {name}?",
+                    'answer': most_basic.replace('_', ' '),
+                    'cid': cid,
+                    'answer_source': 'acid_base_hierarchy_base'
+                })
+
+            # --- Formula Analysis (keep answers short and meaningful) ---
+            # Nitrogen count
             if formula:
                 qa_list.append({'question': f"How many nitrogen atoms are in {name}?", 'answer': str(atom_counts.get('N', 0)), 'cid': cid, 'answer_source': 'molecular_formula (parsed)'})
-                qa_list.append({'question': f"What is the carbon to hydrogen ratio in {name}?", 'answer': f"{atom_counts.get('C', 0)}:{atom_counts.get('H', 0)}", 'cid': cid, 'answer_source': 'molecular_formula (parsed)'})
+
+                # Carbon to hydrogen ratio only when both > 0
+                C = atom_counts.get('C', 0)
+                H = atom_counts.get('H', 0)
+                if C > 0 and H > 0:
+                    qa_list.append({'question': f"What is the carbon to hydrogen ratio in {name}?", 'answer': f"{C}:{H}", 'cid': cid, 'answer_source': 'molecular_formula (parsed)'})
+
                 dou = calculate_dou(atom_counts)
                 qa_list.append({'question': f"What is the degree of unsaturation of {name}?", 'answer': str(dou), 'cid': cid, 'answer_source': 'molecular_formula (calculated)'})
 
-            # 4. Structural Feature Presence (RDKit)
+            # --- Structural Feature Presence (RDKit) ---
             if mol and rdkit_available:
                 ring_info = mol.GetRingInfo()
                 n_rings = ring_info.NumRings()
                 qa_list.append({'question': f"How many rings does {name} contain?", 'answer': str(n_rings), 'cid': cid, 'answer_source': 'rdkit ring_count'})
+
                 if n_rings > 0:
                     ring_sizes = [len(r) for r in ring_info.AtomRings()]
-                    qa_list.append({'question': f"What is the size of the largest ring in {name}?", 'answer': str(max(ring_sizes)), 'cid': cid, 'answer_source': 'rdkit ring_sizes'})
+                    qa_list.append({'question': f"What is the number of heavy atoms in the largest ring cycle (the ring itself) of {name}?", 'answer': str(max(ring_sizes)), 'cid': cid, 'answer_source': 'rdkit ring_sizes'})
+
                 has_5 = any(len(r) == 5 for r in ring_info.AtomRings())
                 qa_list.append({'question': f"Does {name} contain a five-membered ring?", 'answer': 'Yes' if has_5 else 'No', 'cid': cid, 'answer_source': 'rdkit ring_size boolean'})
-            
-            # 5. Advanced Reasoning Questions (Stereo & Fsp3 REMOVED)
-            
-            # C. Drug-Likeness Comparison
+
+                # New: Is the molecule polycyclic?
+                qa_list.append({'question': f"Is {name} polycyclic (more than one ring)?", 'answer': 'Yes' if n_rings > 1 else 'No', 'cid': cid, 'answer_source': 'rdkit polycyclic boolean'})
+
+            # --- Drug-Likeness Comparison (short answer) ---
             if row.get('lipinski_pass') is not None and row.get('veber_pass') is not None:
                 mw, hd, ha, logp = row['molecular_weight'], row['h_bond_donors'], row['h_bond_acceptors'], row['logp']
                 tpsa, rb = row['topological_psa'], row['rotatable_bonds']
-                
+
                 lipinski_fail = 4 - sum([mw <= 500, hd <= 5, ha <= 10, logp <= 5])
                 veber_fail = 2 - sum([rb <= 10, tpsa <= 140])
-                
-                comparison_answer = 'Lipinski' if lipinski_fail > veber_fail else \
-                                    'Veber' if veber_fail > lipinski_fail else 'Neither (violations are equal or zero)'
-                                    
-                qa_list.append({'question': f"Based on the number of violations, which set of rules does {name} deviate from more: **Lipinski's Rule of Five** or **Veber's Rule**?", 'answer': comparison_answer, 'cid': cid, 'answer_source': 'multi_rule_comparison'})
-                
-            # D. Structure-Reactivity Prediction
-            has_aldehyde = any('aldehyde' in x for x in fg) if isinstance(fg, list) else False
-            has_ketone = any('ketone' in x for x in fg) if isinstance(fg, list) else False
-            
-            if has_aldehyde and has_ketone:
-                qa_list.append({'question': f"If {name} were treated with a **mild reducing agent** (e.g., NaBH4), which functional group would be reduced first: the **aldehyde** or the **ketone**?", 'answer': 'Aldehyde (The aldehyde is more electrophilic and therefore more reactive to mild reduction.)', 'cid': cid, 'answer_source': 'chemical_reactivity_comparison'})
 
-        # 6. Relational/Comparative Queries
+                comparison_answer = 'Lipinski' if lipinski_fail > veber_fail else \
+                                    'Veber' if veber_fail > lipinski_fail else 'Neither'
+
+                qa_list.append({'question': f"Which set does {name} deviate from more: Lipinski or Veber?", 'answer': comparison_answer, 'cid': cid, 'answer_source': 'multi_rule_comparison'})
+
+            # --- Short SMILES-based QA (not exposing long SMILES strings) ---
+            if canonical_smiles:
+                qa_list.append({'question': f"What is the length of the canonical SMILES for {name}?", 'answer': str(len(canonical_smiles)), 'cid': cid, 'answer_source': 'iupac_to_smiles_length'})
+            # ---------- Advanced Functional Group Reasoning Questions ----------
+            # Assumes `fg` dict, `name` string, and `cid` available
+            # 1. Dominant Functional Group
+            if fg_nonzero:
+                max_count = max(fg.get(g,0) for g in fg_nonzero)
+                dominant_fgs = [g for g in fg_nonzero if fg.get(g,0) == max_count]
+                qa_list.append({
+                    'question': f"What is the most abundant functional group in {name}?",
+                    'answer': ', '.join([g.replace('_',' ') for g in dominant_fgs]),
+                    'cid': cid,
+                    'answer_source': 'most_abundant_functional_group_with_ties'
+                })
+
+
+            # 2. Functional Group Polarity (Polar vs Nonpolar)
+            polar_fgs = {'alcohol','amine','amide','carboxylic_acid','carbamate','nitrile','phenol','urea','sulfonamide'}
+            nonpolar_fgs = {'alkene','alkyne','ether','ester','ketone','thiol','sulfide','benzene'}
+            polar_count = sum(fg.get(g,0) for g in polar_fgs)
+            nonpolar_count = sum(fg.get(g,0) for g in nonpolar_fgs)
+            if polar_count > 0 or nonpolar_count > 0:
+                polarity_answer = 'polar' if polar_count >= nonpolar_count else 'nonpolar'
+                qa_list.append({
+                    'question': f"Is the most abundant functional group in {name} polar or nonpolar?",
+                    'answer': polarity_answer,
+                    'cid': cid,
+                    'answer_source': 'functional_group_polarity'
+                })
+
+            # 3. Hydrolyzable Functional Groups
+            hydrolyzable_fgs = {'ester','amide','carbamate','urea','anhydride','lactone'}
+            has_hydrolyzable = any(fg.get(g,0) > 0 for g in hydrolyzable_fgs)
+            qa_list.append({
+                'question': f"Does {name} contain a hydrolyzable functional group?",
+                'answer': 'Yes' if has_hydrolyzable else 'No',
+                'cid': cid,
+                'answer_source': 'hydrolyzable_functional_groups'
+            })
+
+            # 4. Mutual Exclusivity Check: Aldehyde vs Ketone
+            has_aldehyde = fg.get('aldehyde',0) > 0
+            has_ketone = fg.get('ketone',0) > 0
+            qa_list.append({
+                'question': f"Does {name} contain both an aldehyde and a ketone group?",
+                'answer': 'Yes' if has_aldehyde and has_ketone else 'No',
+                'cid': cid,
+                'answer_source': 'aldehyde_ketone_exclusivity'
+            })
+
+            # 5. Carbonyl Functional Group Type
+            carbonyl_fgs = ['aldehyde','ketone','ester','amide','carboxylic_acid','anhydride','lactone','carbamate']
+            carbonyl_present = [g for g in carbonyl_fgs if fg.get(g,0) > 0]
+            if carbonyl_present:
+                qa_list.append({
+                    'question': f"(Which carbonyl functional group(s) is present in {name}?",
+                    'answer': ' and '.join([g.replace('_',' ') for g in carbonyl_present]),
+                    'cid': cid,
+                    'answer_source': 'carbonyl_type_presence'
+                })
+
+            # 6. Functional Group Diversity
+            distinct_fg_count = sum(1 for v in fg.values() if v > 0)
+            qa_list.append({
+                'question': f"How many distinct functional group types are present in {name}?",
+                'answer': str(distinct_fg_count),
+                'cid': cid,
+                'answer_source': 'functional_group_diversity'
+            })
+
+            # 7. Comparative Reasoning: Alcohol vs Amine
+            alcohol_count = sum(fg.get(g,0) for g in ['primary_alcohol','secondary_alcohol','tertiary_alcohol'])
+            amine_count = sum(fg.get(g,0) for g in ['primary_amine','secondary_amine','tertiary_amine'])
+            if alcohol_count != amine_count:
+                more_group = 'alcohol' if alcohol_count > amine_count else 'amine'
+                qa_list.append({
+                    'question': f"Which functional group is more numerous in {name}, alcohol or amine?",
+                    'answer': more_group,
+                    'cid': cid,
+                    'answer_source': 'alcohol_vs_amine_count'
+                })
+            else:
+                qa_list.append({
+                    'question': f"Which functional group is more numerous in {name}, alcohol or amine?",
+                    'answer': 'Same',
+                    'cid': cid,
+                    'answer_source': 'alcohol_vs_amine_count'
+                })
+
+            # 8. Nitrogen vs Oxygen Dominance
+            N_count = sum(fg.get(g,0) for g in fg if 'amine' in g or 'amide' in g or 'nitrile' in g or 'guanidine' in g or 'imidazole' in g)
+            O_count = sum(fg.get(g,0) for g in fg if 'alcohol' in g or 'ether' in g or 'ester' in g or 'carbonyl' in g or 'carboxylic' in g or 'phenol' in g)
+            if N_count > O_count:
+                dominant_element_group = 'nitrogen-containing'
+            elif O_count > N_count:
+                dominant_element_group = 'oxygen-containing'
+            else:
+                dominant_element_group = 'neither dominates'
+            qa_list.append({
+                'question': f"Is {name} primarily a nitrogen-containing or oxygen-containing compound?",
+                'answer': dominant_element_group,
+                'cid': cid,
+                'answer_source': 'element_based_functional_group_dominance'
+            })
+
+
+        # --- Pairwise (MCS-derived) QA: only short/numeric/yes-no answers ---
         if len(self.df) >= 2 and rdkit_available:
-            for _ in range(min(5, len(self.df) // 2)):
-                pair_df = self.df.sample(n=2, replace=False)
-                # Ensure we use canonical smiles for LCS
+            n_pairs = min(5, len(self.df) // 2)
+            for i in range(n_pairs):
+                # reproducible sampling
+                pair_df = self.df.sample(n=2, replace=False, random_state=self.pandas_random_state + i)
                 smiles_a = pair_df.iloc[0]['canonical_smiles']
                 smiles_b = pair_df.iloc[1]['canonical_smiles']
                 name_a, name_b = pair_df.iloc[0]['name'], pair_df.iloc[1]['name']
                 cid_a, cid_b = pair_df.iloc[0]['cid'], pair_df.iloc[1]['cid']
-                
+
                 if smiles_a and smiles_b:
-                    # Maximum Common Substructure (LCS/MCS)
-                    lcs_smarts = compute_lcs_smarts(smiles_a, smiles_b)
-                    if lcs_smarts:
-                        qa_list.append({'question': f"What is the SMARTS string for the **Maximum Common Substructure (MCS)** shared by {name_a} and {name_b}?", 'answer': lcs_smarts, 'cid': f'{cid_a}|{cid_b}', 'answer_source': 'rdkit:mcs'})
-                
-                    # Physicochemical Comparison (e.g., H-bonds)
-                    ha_a = pair_df.iloc[0]['h_bond_acceptors']
-                    ha_b = pair_df.iloc[1]['h_bond_acceptors']
-                    if ha_a is not None and ha_b is not None and ha_a != ha_b:
-                        higher_ha_name = name_a if ha_a > ha_b else name_b
-                        qa_list.append({'question': f"Which compound, **{name_a}** (HA: {ha_a}) or **{name_b}** (HA: {ha_b}), has a higher number of H-bond **acceptors**?", 'answer': higher_ha_name, 'cid': f'{cid_a}|{cid_b}', 'answer_source': 'h_bond_acceptors_comparison'})
-                        
-        return qa_list
+                    smarts, mcs_atoms = compute_mcs_info(smiles_a, smiles_b)
+                    if mcs_atoms:
+                        qa_list.append({
+                            'question': f"How many atoms are in the maximum common substructure of {name_a} and {name_b}?",
+                            'answer': str(mcs_atoms),
+                            'cid': f'{cid_a}|{cid_b}',
+                            'answer_source': 'rdkit:mcs_num_atoms'
+                        })
+                        # Short aromatic-check derived from MCS
+                        has_aromatic = 'c' in (smarts or '')
+                        qa_list.append({
+                            'question': f"Do {name_a} and {name_b} share an aromatic substructure?",
+                            'answer': 'Yes' if has_aromatic else 'No',
+                            'cid': f'{cid_a}|{cid_b}',
+                            'answer_source': 'rdkit:mcs_aromatic_bool'
+                        })
+
+                # Compare H-bond acceptors (short answer: name)
+                ha_a = pair_df.iloc[0].get('h_bond_acceptors')
+                ha_b = pair_df.iloc[1].get('h_bond_acceptors')
+                if ha_a is not None and ha_b is not None and ha_a != ha_b:
+                    higher_ha_name = name_a if ha_a > ha_b else name_b
+                    qa_list.append({
+                        'question': f"Which compound, {name_a} or {name_b}, has a higher number of H-bond acceptors?",
+                        'answer': higher_ha_name,
+                        'cid': f'{cid_a}|{cid_b}',
+                        'answer_source': 'h_bond_acceptors_comparison'
+                    })
+
+        # Deduplicate QA entries by (question, cid, answer) to avoid duplicates
+        unique_idx = {}
+        deduped = []
+        for q in qa_list:
+            key = (q.get('question'), q.get('cid'), q.get('answer'))
+            if key not in unique_idx:
+                unique_idx[key] = True
+                deduped.append(q)
+
+        return deduped
 
     def save_outputs(self, qa_list: List[Dict[str, Any]]) -> None:
-        self.df.to_csv(self.csv_file, index=False)
+        # Save dataframe and QA JSON
+        try:
+            self.df.to_csv(self.csv_file, index=False)
+        except Exception as e:
+            print(f"Warning: could not save CSV: {e}")
         try:
             with open(self.qa_file, 'w') as f:
                 json.dump(qa_list, f, indent=2)
@@ -402,9 +690,11 @@ class PubChemQADataset:
         if self.failed_cids:
             print(f"Failed CIDs: {len(self.failed_cids)} (sample: {self.failed_cids[:5]})")
 
+
 if __name__ == "__main__":
     start_time = time.time()
-    cid_list = [2244, 2519, 5904, 338, 54670067] 
+    # deterministic CID selection
+    cid_list = random.sample(range(1, 17700000), 30)
     generator = PubChemQADataset(output_prefix="chemistry_qa_dataset")
     generator.run(cid_list)
     end_time = time.time()
